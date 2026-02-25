@@ -1,33 +1,315 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Nessa Barret</title>
-
-  <!-- Google Font -->
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400&display=swap" rel="stylesheet">
-
-  <!-- Подключение CSS (из папки css) -->
-  <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <title>PhotoPortfolio — Nicole Jane</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
-<body>
+<body class="page">
 
-<section class="hero">
-  <p class="hero-subtitle">Wedding & Portrait Photographer</p>
-  <h1 class="hero-title">Nessa Barret</h1>
-  <a href="#portfolio" class="hero-btn">View Portfolio</a>
-</section>
+<a href="#main" class="skip-link">Перейти к основному содержимому</a>
 
-<section class="portfolio" id="portfolio">
-  <div class="portfolio-item"></div>
-  <div class="portfolio-item"></div>
-  <div class="portfolio-item"></div>
-</section>
+<!-- ================= HEADER ================= -->
 
-<!-- Подключение JS -->
-<script src="js/script.js"></script>
+<header class="header">
+    <div class="header__container">
+        <div class="header__logo">Nicole Jane</div>
+
+        <nav class="header__nav nav">
+            <ul class="nav__list">
+                <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+                <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                <li class="nav__item"><a href="#gallery" class="nav__link">Gallery</a></li>
+                <li class="nav__item"><a href="#projects" class="nav__link">Projects</a></li>
+                <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<!-- ================= MAIN ================= -->
+
+<main id="main" class="main">
+
+    <!-- ================= HERO (Person) ================= -->
+
+    <section id="home"
+             class="hero"
+             itemscope
+             itemtype="https://schema.org/Person">
+
+        <div class="hero__content">
+
+            <img src="images/frame1.png"
+                 alt="Portrait of wildlife photographer Nicole Jane"
+                 class="hero__image"
+                 itemprop="image">
+
+            <h1 class="hero__title" itemprop="name">
+                Nicole Jane
+            </h1>
+
+            <p class="hero__subtitle">
+                <span itemprop="description">
+                    Wildlife Photographer specializing in African wildlife photography.
+                </span>
+            </p>
+
+            <p class="hero__since">
+                Since <time datetime="2008">2008</time>
+            </p>
+
+        </div>
+    </section>
+
+    <!-- ================= ABOUT ================= -->
+
+    <section id="about" class="about">
+        <h2 class="about__title">About Me</h2>
+
+        <p class="about__text">
+            Latio in the counter to the focus. Lorem ipsum dolor sit amet,
+            consectetur adipiscing elit. Felis in nibh in risus, cras tellus
+            facilisis adipiscing. In massa at quis lorem vel facilisis morbi.
+            Id eget enim, leo sed nunc. Nisi praesent vitae tincidunt iaculis.
+        </p>
+    </section>
+
+    <!-- ================= LAYOUT ================= -->
+
+    <div class="layout">
+
+        <!-- ================= GALLERY ================= -->
+
+        <section id="gallery" class="gallery">
+            <h2 class="gallery__title">Gallery</h2>
+
+            <div class="gallery__grid">
+
+                <!-- 1 -->
+                <article class="gallery__item" itemscope itemtype="https://schema.org/Photograph">
+                    <figure class="gallery__figure">
+                        <img src="images/frame2picture1.png"
+                             alt="Lion standing in African savannah"
+                             class="gallery__image"
+                             itemprop="image">
+                        <figcaption class="gallery__caption">
+                            <h3 class="gallery__name" itemprop="name">Savannah Lion</h3>
+                            <p class="gallery__description" itemprop="description">
+                                Lion photographed in African savannah landscape.
+                            </p>
+                        </figcaption>
+                    </figure>
+                </article>
+
+                <!-- 2 -->
+                <article class="gallery__item" itemscope itemtype="https://schema.org/Photograph">
+                    <figure class="gallery__figure">
+                        <img src="images/frame2picture2.png"
+                             alt="Elephant herd walking in wild"
+                             class="gallery__image"
+                             itemprop="image">
+                        <figcaption class="gallery__caption">
+                            <h3 class="gallery__name" itemprop="name">Elephant Herd</h3>
+                            <p class="gallery__description" itemprop="description">
+                                Group of elephants during seasonal migration.
+                            </p>
+                        </figcaption>
+                    </figure>
+                </article>
+
+                <!-- 3 -->
+                <article class="gallery__item" itemscope itemtype="https://schema.org/Photograph">
+                    <figure class="gallery__figure">
+                        <img src="images/frame2picture3.png"
+                             alt="Close-up portrait of African buffalo"
+                             class="gallery__image"
+                             itemprop="image">
+                        <figcaption class="gallery__caption">
+                            <h3 class="gallery__name" itemprop="name">Innocent Buffalo</h3>
+                            <p class="gallery__description" itemprop="description">
+                                Close-up portrait of African buffalo.
+                            </p>
+                        </figcaption>
+                    </figure>
+                </article>
+
+                <!-- 4 -->
+                <article class="gallery__item" itemscope itemtype="https://schema.org/Photograph">
+                    <figure class="gallery__figure">
+                        <img src="images/frame2picture4.png"
+                             alt="Royal Bengal tiger in jungle habitat"
+                             class="gallery__image"
+                             itemprop="image">
+                        <figcaption class="gallery__caption">
+                            <h3 class="gallery__name" itemprop="name">Royal Bengal Tiger</h3>
+                            <p class="gallery__description" itemprop="description">
+                                Bengal tiger captured in its natural jungle habitat.
+                            </p>
+                        </figcaption>
+                    </figure>
+                </article>
+
+                <!-- 5 -->
+                <article class="gallery__item" itemscope itemtype="https://schema.org/Photograph">
+                    <figure class="gallery__figure">
+                        <img src="images/frame2picture5.png"
+                             alt="Giraffe against blue sky"
+                             class="gallery__image"
+                             itemprop="image">
+                        <figcaption class="gallery__caption">
+                            <h3 class="gallery__name" itemprop="name">Graceful Giraffe</h3>
+                            <p class="gallery__description" itemprop="description">
+                                Giraffe standing against clear blue sky.
+                            </p>
+                        </figcaption>
+                    </figure>
+                </article>
+
+                <!-- 6 -->
+                <article class="gallery__item" itemscope itemtype="https://schema.org/Photograph">
+                    <figure class="gallery__figure">
+                        <img src="images/frame2picture6.png"
+                             alt="Leopard resting on tree branch"
+                             class="gallery__image"
+                             itemprop="image">
+                        <figcaption class="gallery__caption">
+                            <h3 class="gallery__name" itemprop="name">Leopard Resting</h3>
+                            <p class="gallery__description" itemprop="description">
+                                Leopard relaxing on tree branch.
+                            </p>
+                        </figcaption>
+                    </figure>
+                </article>
+
+                <!-- 7 -->
+                <article class="gallery__item" itemscope itemtype="https://schema.org/Photograph">
+                    <figure class="gallery__figure">
+                        <img src="images/frame2picture7.png"
+                             alt="Birds flying over lake"
+                             class="gallery__image"
+                             itemprop="image">
+                        <figcaption class="gallery__caption">
+                            <h3 class="gallery__name" itemprop="name">Birds Over Lake</h3>
+                            <p class="gallery__description" itemprop="description">
+                                Flock of birds flying above lake.
+                            </p>
+                        </figcaption>
+                    </figure>
+                </article>
+
+                <!-- 8 -->
+                <article class="gallery__item" itemscope itemtype="https://schema.org/Photograph">
+                    <figure class="gallery__figure">
+                        <img src="images/frame2picture8.png"
+                             alt="African sunset landscape"
+                             class="gallery__image"
+                             itemprop="image">
+                        <figcaption class="gallery__caption">
+                            <h3 class="gallery__name" itemprop="name">African Sunset</h3>
+                            <p class="gallery__description" itemprop="description">
+                                Sunset landscape in African savannah.
+                            </p>
+                        </figcaption>
+                    </figure>
+                </article>
+
+                <!-- 9 -->
+                <article class="gallery__item" itemscope itemtype="https://schema.org/Photograph">
+                    <figure class="gallery__figure">
+                        <img src="images/frame2picture9.png"
+                             alt="Wild zebra in grassland"
+                             class="gallery__image"
+                             itemprop="image">
+                        <figcaption class="gallery__caption">
+                            <h3 class="gallery__name" itemprop="name">Wild Zebra</h3>
+                            <p class="gallery__description" itemprop="description">
+                                Zebra standing freely in grassland.
+                            </p>
+                        </figcaption>
+                    </figure>
+                </article>
+
+                <!-- 10 -->
+                <article class="gallery__item" itemscope itemtype="https://schema.org/Photograph">
+                    <figure class="gallery__figure">
+                        <img src="images/frame2picture10.png"
+                             alt="Rhino walking at dusk"
+                             class="gallery__image"
+                             itemprop="image">
+                        <figcaption class="gallery__caption">
+                            <h3 class="gallery__name" itemprop="name">Rhino at Dusk</h3>
+                            <p class="gallery__description" itemprop="description">
+                                Rhino walking during evening light.
+                            </p>
+                        </figcaption>
+                    </figure>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- ================= PROJECTS ================= -->
+
+    <section id="projects" class="projects">
+        <h2 class="projects__title">Latest Projects</h2>
+
+        <article class="projects__item"
+                 itemscope
+                 itemtype="https://schema.org/Photograph">
+
+            <figure class="projects__figure">
+                <img src="images/frame3.png"
+                     alt="Royal Bengal Tiger conservation photography project"
+                     class="projects__image"
+                     itemprop="image">
+
+                <figcaption class="projects__caption">
+                    <h3 class="projects__name" itemprop="name">
+                        Royal Bengal Tiger Project
+                    </h3>
+                    <p class="projects__description" itemprop="description">
+                        Documentary photography project focused on tiger conservation.
+                    </p>
+                </figcaption>
+            </figure>
+
+        </article>
+    </section>
+
+        <!-- ================= SIDEBAR ================= -->
+
+        <aside class="sidebar">
+            <h2 class="sidebar__title">Listed In</h2>
+            <ul class="sidebar__list">
+                <li class="sidebar__item">Ozone</li>
+                <li class="sidebar__item">Grabmaze</li>
+                <li class="sidebar__item">Natureflow</li>
+                <li class="sidebar__item">AllAround</li>
+                <li class="sidebar__item">IGnt</li>
+            </ul>
+        </aside>
+
+    </div>
+
+    
+
+</main>
+
+<!-- ================= FOOTER ================= -->
+
+<footer id="contact" class="footer">
+    <div class="footer__container">
+        <p class="footer__copyright">
+            © <time datetime="2022">2022</time> Nicole Jane.
+            All rights reserved.
+        </p>
+        <p class="footer__credits">
+            Designed by TemplatesJungle
+        </p>
+    </div>
+</footer>
 
 </body>
 </html>
