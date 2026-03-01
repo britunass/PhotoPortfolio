@@ -1,0 +1,7 @@
+Шрифты:
+Libre Bodoni
+Montserrat
+
+Цвета:
+Фон EDECE8, E5E5E5,
+Надписи: 2B2A29, 343433
