@@ -4,19 +4,14 @@
     <meta charset="UTF-8">
     <title>PhotoPortfolio — Nicole Jane</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="wildlife photography, Nicole Jane, African wildlife, lion photos, nature portfolio">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Libre+Bodoni:wght@400&display=swap" rel="stylesheet">
 </head>
-
 <body class="page">
-
-<a href="#main" class="skip-link">Перейти к основному содержимому</a>
-
-
 
 <header class="header">
     <div class="header__container">
         <div class="header__logo">Nicole Jane</div>
-
         <nav class="header__nav nav">
             <ul class="nav__list">
                 <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
@@ -26,26 +21,21 @@
                 <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
             </ul>
         </nav>
+        <div class="burger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
     </div>
 </header>
-
-
 <main id="main" class="main">
-
-
     <section id="home"
              class="hero"
              itemscope
              itemtype="https://schema.org/Person">
-           
-        <meta itemprop="keywords" content="wildlife photographer, professional photography">      
 
         <div class="hero__content">
 
-            <img src="images/frame1.png"
-                 alt="Portrait of wildlife photographer Nicole Jane"
-                 class="hero__image"
-                 itemprop="image">
 
             <h1 class="hero__title" itemprop="name">
                 Nicole Jane
@@ -53,7 +43,7 @@
 
             <p class="hero__subtitle">
                 <span itemprop="description">
-                    Wildlife Photographer specializing in African wildlife photography.
+                    Wildlife Photographer
                 </span>
             </p>
 
@@ -63,237 +53,204 @@
 
         </div>
     </section>
-
-
     <section id="about" class="about">
-        <h2 class="about__title">About Me</h2>
-
-        <p class="about__text">
-            Latio in the counter to the focus. Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit. Felis in nibh in risus, cras tellus
-            facilisis adipiscing. In massa at quis lorem vel facilisis morbi.
-            Id eget enim, leo sed nunc. Nisi praesent vitae tincidunt iaculis.
-        </p>
+        <div class="about__left">
+            <h2 class="about__title">
+                — About Me</h2>
+            <h3 class="about__subtitle">Latio in the <br> counter to the <br> focus.</h3>
+        </div>
+        <div class="about__right">
+            <p class="about__text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Felis in nibh in risus, cras tellus facilisis adipiscing. In massa at quis lorem vel facilisis morbi. Id eget enim, leo sed nunc. Nisi praesent vitae tincidunt iaculis.
+            </p>
+            <p class="about__text">
+                Semper quis gravida accumsan quam mattis tellus dignissim. Commodo lectus in integer montes, consectetur sed nisl sollicitudin. Sit sem sem odio mattis.
+            </p>
+        </div>
     </section>
-
-
     <div class="layout">
+        <div id="gallery" class="gallery">
+  <!-- 
+        
+        <article class="gallery__item" itemscope itemtype="https://schema.org/Photograph">
+            <figure class="gallery__figure">
+            <img src="images/frame2picture1.png" alt="Buffalo" class="gallery__image" itemprop="image">
+            </figure>
+        </article>
+        <article class="gallery__item" itemscope itemtype="https://schema.org/Photograph">
+            <figure class="gallery__figure">
+            <img src="images/frame2picture2.png" alt="Giraffe" class="gallery__image" itemprop="image">
+        </figure>
+        </article>
+        <article class="gallery__item" itemscope itemtype="https://schema.org/Photograph">
+            <figure class="gallery__figure">
+            <img src="images/frame2picture3.png" alt="Owl" class="gallery__image" itemprop="image">
+        </figure>
+        </article>
+      
+ 
+   
+            <article class="gallery__item" itemscope itemtype="https://schema.org/Photograph">
+                <figure class="gallery__figure">
+                    <img src="images/frame2picture4.png" alt="Lion" class="gallery__image" itemprop="image">
+                </figure>
+            </article>
+            <article class="gallery__item" itemscope itemtype="https://schema.org/Photograph">
+                <figure class="gallery__figure">
 
+                    <img src="images/frame2picture5.png" alt="Elephant herd" class="gallery__image" itemprop="image">
+                    <figcaption class="gallery__caption">
+                        <h3 class="gallery__name" itemprop="name">Buffalo</h3>
+                    </figcaption>
+                </figure>
+            </article>
+            <article class="gallery__item" itemscope itemtype="https://schema.org/Photograph">
+                <figure class="gallery__figure">
+                    <img src="images/frame2picture6.png" alt="Tiger" class="gallery__image" itemprop="image">
+                </figure>
+            </article>
+            <article class="gallery__item" itemscope itemtype="https://schema.org/Photograph">
+                <figure class="gallery__figure">
+                    <img src="images/frame2picture7.png" alt="Leopard" class="gallery__image" itemprop="image">
+                </figure>
+            </article>
 
-        <section id="gallery" class="gallery">
-            <h2 class="gallery__title">Gallery</h2>
+ 
+    <article class="gallery__item" itemscope itemtype="https://schema.org/Photograph">
+      <figure class="gallery__figure">
+        <img src="images/frame2picture8.png" alt="Monkey" class="gallery__image" itemprop="image">
+      </figure>
+    </article>
+    <article class="gallery__item" itemscope itemtype="https://schema.org/Photograph">
+      <figure class="gallery__figure">
+        <img src="images/frame2picture9.png" alt="Zebra" class="gallery__image" itemprop="image">
+      </figure>
+    </article>
+    <article class="gallery__item" itemscope itemtype="https://schema.org/Photograph">
+      <figure class="gallery__figure">
+        <img src="images/frame2picture10.png" alt="Rhinoceros" class="gallery__image" itemprop="image">
+      </figure>
+    </article>  -->
+     
+      <div class="gallery__column gallery__column-left">
+        <article class="gallery__item" itemscope itemtype="https://schema.org/Photograph">
+            <figure class="gallery__figure">
+            <img src="images/frame2picture1.png" alt="Buffalo" class="gallery__image" itemprop="image">
+            </figure>
+        </article>
+        <article class="gallery__item" itemscope itemtype="https://schema.org/Photograph">
+            <figure class="gallery__figure">
+            <img src="images/frame2picture2.png" alt="Giraffe" class="gallery__image" itemprop="image">
+        </figure>
+        </article>
+        <article class="gallery__item" itemscope itemtype="https://schema.org/Photograph">
+            <figure class="gallery__figure">
+            <img src="images/frame2picture3.png" alt="Owl" class="gallery__image" itemprop="image">
+        </figure>
+        </article>
+        </div>
+ 
+        <div class="gallery__column gallery__column-center">
+        <article class="gallery__item" itemscope itemtype="https://schema.org/Photograph">
+      <figure class="gallery__figure">
+        <img src="images/frame2picture4.png" alt="Lion" class="gallery__image" itemprop="image">
+      </figure>
+    </article>
+    <article class="gallery__item" itemscope itemtype="https://schema.org/Photograph">
+      <figure class="gallery__figure">
+        <img src="images/frame2picture5.png" alt="Elephant herd" class="gallery__image" itemprop="image">
+        <fig caption class="gallery__caption">
+          <h3 class="gallery__name" itemprop="name">Buffalo</h3>
+        </figcaption>
+      </figure>
+    </article>
+    <article class="gallery__item" itemscope itemtype="https://schema.org/Photograph">
+      <figure class="gallery__figure">
+        <img src="images/frame2picture6.png" alt="Tiger" class="gallery__image" itemprop="image">
+      </figure>
+    </article>
+    <article class="gallery__item" itemscope itemtype="https://schema.org/Photograph">
+      <figure class="gallery__figure">
+        <img src="images/frame2picture7.png" alt="Leopard" class="gallery__image" itemprop="image">
+      </figure>
+    </article>
+  </div>
 
-            <div class="gallery__grid">
+  <div class="gallery__column">
+    <article class="gallery__item" itemscope itemtype="https://schema.org/Photograph">
+      <figure class="gallery__figure">
+        <img src="images/frame2picture8.png" alt="Monkey" class="gallery__image" itemprop="image">
+      </figure>
+    </article>
+    <article class="gallery__item" itemscope itemtype="https://schema.org/Photograph">
+      <figure class="gallery__figure">
+        <img src="images/frame2picture9.png" alt="Zebra" class="gallery__image" itemprop="image">
+      </figure>
+    </article>
+    <article class="gallery__item" itemscope itemtype="https://schema.org/Photograph">
+      <figure class="gallery__figure">
+        <img src="images/frame2picture10.png" alt="Rhinoceros" class="gallery__image" itemprop="image">
+      </figure>
+    </article>
+        </div>
+  </div> 
 
-                <article class="gallery__item" itemscope itemtype="https://schema.org/Photograph">
-                    <figure class="gallery__figure">
-                        <img src="images/frame2picture1.png"
-                             alt="Lion standing in African savannah"
-                             class="gallery__image"
-                             itemprop="image">
-                        <figcaption class="gallery__caption">
-                            <h3 class="gallery__name" itemprop="name">Savannah Lion</h3>
-                            <p class="gallery__description" itemprop="description">
-                                Lion photographed in African savannah landscape.
-                            </p>
-                        </figcaption>
-                    </figure>
-                </article>
+  
 
-                <article class="gallery__item" itemscope itemtype="https://schema.org/Photograph">
-                    <figure class="gallery__figure">
-                        <img src="images/frame2picture2.png"
-                             alt="Elephant herd walking in wild"
-                             class="gallery__image"
-                             itemprop="image">
-                        <figcaption class="gallery__caption">
-                            <h3 class="gallery__name" itemprop="name">Elephant Herd</h3>
-                            <p class="gallery__description" itemprop="description">
-                                Group of elephants during seasonal migration.
-                            </p>
-                        </figcaption>
-                    </figure>
-                </article>
-
-                <article class="gallery__item" itemscope itemtype="https://schema.org/Photograph">
-                    <figure class="gallery__figure">
-                        <img src="images/frame2picture3.png"
-                             alt="Close-up portrait of African buffalo"
-                             class="gallery__image"
-                             itemprop="image">
-                        <figcaption class="gallery__caption">
-                            <h3 class="gallery__name" itemprop="name">Innocent Buffalo</h3>
-                            <p class="gallery__description" itemprop="description">
-                                Close-up portrait of African buffalo.
-                            </p>
-                        </figcaption>
-                    </figure>
-                </article>
-
-                <article class="gallery__item" itemscope itemtype="https://schema.org/Photograph">
-                    <figure class="gallery__figure">
-                        <img src="images/frame2picture4.png"
-                             alt="Royal Bengal tiger in jungle habitat"
-                             class="gallery__image"
-                             itemprop="image">
-                        <figcaption class="gallery__caption">
-                            <h3 class="gallery__name" itemprop="name">Royal Bengal Tiger</h3>
-                            <p class="gallery__description" itemprop="description">
-                                Bengal tiger captured in its natural jungle habitat.
-                            </p>
-                        </figcaption>
-                    </figure>
-                </article>
-
-                <article class="gallery__item" itemscope itemtype="https://schema.org/Photograph">
-                    <figure class="gallery__figure">
-                        <img src="images/frame2picture5.png"
-                             alt="Giraffe against blue sky"
-                             class="gallery__image"
-                             itemprop="image">
-                        <figcaption class="gallery__caption">
-                            <h3 class="gallery__name" itemprop="name">Graceful Giraffe</h3>
-                            <p class="gallery__description" itemprop="description">
-                                Giraffe standing against clear blue sky.
-                            </p>
-                        </figcaption>
-                    </figure>
-                </article>
-
-                <article class="gallery__item" itemscope itemtype="https://schema.org/Photograph">
-                    <figure class="gallery__figure">
-                        <img src="images/frame2picture6.png"
-                             alt="Leopard resting on tree branch"
-                             class="gallery__image"
-                             itemprop="image">
-                        <figcaption class="gallery__caption">
-                            <h3 class="gallery__name" itemprop="name">Leopard Resting</h3>
-                            <p class="gallery__description" itemprop="description">
-                                Leopard relaxing on tree branch.
-                            </p>
-                        </figcaption>
-                    </figure>
-                </article>
-
-                <article class="gallery__item" itemscope itemtype="https://schema.org/Photograph">
-                    <figure class="gallery__figure">
-                        <img src="images/frame2picture7.png"
-                             alt="Birds flying over lake"
-                             class="gallery__image"
-                             itemprop="image">
-                        <figcaption class="gallery__caption">
-                            <h3 class="gallery__name" itemprop="name">Birds Over Lake</h3>
-                            <p class="gallery__description" itemprop="description">
-                                Flock of birds flying above lake.
-                            </p>
-                        </figcaption>
-                    </figure>
-                </article>
-
-                <article class="gallery__item" itemscope itemtype="https://schema.org/Photograph">
-                    <figure class="gallery__figure">
-                        <img src="images/frame2picture8.png"
-                             alt="African sunset landscape"
-                             class="gallery__image"
-                             itemprop="image">
-                        <figcaption class="gallery__caption">
-                            <h3 class="gallery__name" itemprop="name">African Sunset</h3>
-                            <p class="gallery__description" itemprop="description">
-                                Sunset landscape in African savannah.
-                            </p>
-                        </figcaption>
-                    </figure>
-                </article>
-
-                <article class="gallery__item" itemscope itemtype="https://schema.org/Photograph">
-                    <figure class="gallery__figure">
-                        <img src="images/frame2picture9.png"
-                             alt="Wild zebra in grassland"
-                             class="gallery__image"
-                             itemprop="image">
-                        <figcaption class="gallery__caption">
-                            <h3 class="gallery__name" itemprop="name">Wild Zebra</h3>
-                            <p class="gallery__description" itemprop="description">
-                                Zebra standing freely in grassland.
-                            </p>
-                        </figcaption>
-                    </figure>
-                </article>
-
-                <article class="gallery__item" itemscope itemtype="https://schema.org/Photograph">
-                    <figure class="gallery__figure">
-                        <img src="images/frame2picture10.png"
-                             alt="Rhino walking at dusk"
-                             class="gallery__image"
-                             itemprop="image">
-                        <figcaption class="gallery__caption">
-                            <h3 class="gallery__name" itemprop="name">Rhino at Dusk</h3>
-                            <p class="gallery__description" itemprop="description">
-                                Rhino walking during evening light.
-                            </p>
-                        </figcaption>
-                    </figure>
-                </article>
-
-            </div>
-        </section>
-
-
+        <div class="btn-container">
+    <a class="btn">
+        See my gallery
+        <span class="btn-line"></span>
+    </a>
+</div>
     <section id="projects" class="projects">
-        <h2 class="projects__title">Latest Projects</h2>
-
+        <div class="project_left">
+            <p class="project_tit">— Projects</p>
+            <p class="projects__title">Latest Projects</p>
+        </div>
         <article class="projects__item"
                  itemscope
                  itemtype="https://schema.org/Photograph">
-
             <figure class="projects__figure">
-                <img src="images/frame3.png"
-                     alt="Royal Bengal Tiger conservation photography project"
-                     class="projects__image"
-                     itemprop="image">
-
                 <figcaption class="projects__caption">
                     <h3 class="projects__name" itemprop="name">
-                        Royal Bengal Tiger Project
+                        Royal Bengal Tiger
                     </h3>
-                    <p class="projects__description" itemprop="description">
-                        Documentary photography project focused on tiger conservation.
-                    </p>
                 </figcaption>
             </figure>
-
         </article>
+        <div class="btn-container">
+    <a class="btn">
+        View projects
+        <span class="btn-line"></span>
+    </a>
+</div>
     </section>
-
-
-        <aside class="sidebar">
-            <h2 class="sidebar__title">Listed In</h2>
-            <ul class="sidebar__list">
-                <li class="sidebar__item">Ozone</li>
-                <li class="sidebar__item">Grabmaze</li>
-                <li class="sidebar__item">Natureflow</li>
-                <li class="sidebar__item">AllAround</li>
-                <li class="sidebar__item">IGnt</li>
-            </ul>
-        </aside>
-
+        <section class="listed">
+    <ul class="listed__list">
+        <li class="listed__item">Ozone</li>
+        <li class="listed__item">Grabmaze</li>
+        <li class="listed__item">Natureflow</li>
+        <li class="listed__item">AllAround</li>
+        <li class="listed__item">IGnt</li>
+    </ul>
+</section>
     </div>
-
-    
-
 </main>
-
 <footer id="contact" class="footer">
-    <div class="footer__container">
-        <p class="footer__copyright">
-            © <time datetime="2022">2022</time> Nicole Jane.
-            All rights reserved.
+    <div class="footer_left">
+        <p class="footer_text">
+            Copyright © Nicole Jane 2022. All rights reserved.
         </p>
-        <p class="footer__credits">
-            Designed by TemplatesJungle
+        <p class="footer_text">
+            Commodo lectus in integer montes, consectetur sed nisl sollicitudin sit sem sem odio mattis.
+        </p>
+    </div>
+    <div class="footer_right">
+        <p class="footer_text">
+            Designed by - TemplatesJungle
         </p>
     </div>
 </footer>
-
 </body>
 </html>

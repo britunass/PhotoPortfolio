@@ -1,0 +1,15 @@
+:root {
+    --color-bg: #F4F3F1;
+    --color-primary: #343433;
+    --color-secondary: #D7D1C5;
+    --color-accent: #A89C83;
+    --color-light: #EDECE8;
+    --font-primary: 'Montserrat', sans-serif;
+    --font-secondary: 'Libre Bodoni', serif;
+    --font-weight-normal: 400;
+    --font-weight-medium: 500;
+    --font-weight-semibold: 600;
+    --font-weight-bold: 700;
+    --line-height-normal: 1.5;
+    --line-height-tight: 1.2;
+}
