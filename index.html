@@ -132,76 +132,76 @@
       </figure>
     </article>  -->
      
-      <div class="gallery__column gallery__column-left">
+            <div class="gallery__column gallery__column-left">
         <article class="gallery__item" itemscope itemtype="https://schema.org/Photograph">
-            <figure class="gallery__figure">
-            <img src="images/frame2picture1.png" alt="Buffalo" class="gallery__image" itemprop="image">
+            <figure class="gallery__figure" data-category="Deer">
+            <img src="images/frame2picture1.png" alt="Deer" class="gallery__image" itemprop="image">
             </figure>
         </article>
         <article class="gallery__item" itemscope itemtype="https://schema.org/Photograph">
-            <figure class="gallery__figure">
-            <img src="images/frame2picture2.png" alt="Giraffe" class="gallery__image" itemprop="image">
+            <figure class="gallery__figure" data-category="Fox">
+            <img src="images/frame2picture2.png" alt="Fox" class="gallery__image" itemprop="image">
         </figure>
         </article>
         <article class="gallery__item" itemscope itemtype="https://schema.org/Photograph">
-            <figure class="gallery__figure">
-            <img src="images/frame2picture3.png" alt="Owl" class="gallery__image" itemprop="image">
+            <figure class="gallery__figure" data-category="Lion">
+            <img src="images/frame2picture3.png" alt="Lion" class="gallery__image" itemprop="image">
         </figure>
         </article>
         </div>
- 
+
         <div class="gallery__column gallery__column-center">
         <article class="gallery__item" itemscope itemtype="https://schema.org/Photograph">
-      <figure class="gallery__figure">
+      <figure class="gallery__figure" data-category="Lion">
         <img src="images/frame2picture4.png" alt="Lion" class="gallery__image" itemprop="image">
       </figure>
     </article>
     <article class="gallery__item" itemscope itemtype="https://schema.org/Photograph">
-      <figure class="gallery__figure">
-        <img src="images/frame2picture5.png" alt="Elephant herd" class="gallery__image" itemprop="image">
+      <figure class="gallery__figure" data-category="Buffalo">
+        <img src="images/frame2picture5.png" alt="Buffalo" class="gallery__image" itemprop="image">
         <fig caption class="gallery__caption">
           <h3 class="gallery__name" itemprop="name">Buffalo</h3>
         </figcaption>
       </figure>
     </article>
     <article class="gallery__item" itemscope itemtype="https://schema.org/Photograph">
-      <figure class="gallery__figure">
-        <img src="images/frame2picture6.png" alt="Tiger" class="gallery__image" itemprop="image">
+      <figure class="gallery__figure" data-category="Rhinoceros">
+        <img src="images/frame2picture6.png" alt="Rhinoceros" class="gallery__image" itemprop="image">
       </figure>
     </article>
     <article class="gallery__item" itemscope itemtype="https://schema.org/Photograph">
-      <figure class="gallery__figure">
-        <img src="images/frame2picture7.png" alt="Leopard" class="gallery__image" itemprop="image">
+      <figure class="gallery__figure" data-category="Owl">
+        <img src="images/frame2picture7.png" alt="Owl" class="gallery__image" itemprop="image">
       </figure>
     </article>
   </div>
 
+
   <div class="gallery__column">
     <article class="gallery__item" itemscope itemtype="https://schema.org/Photograph">
-      <figure class="gallery__figure">
+      <figure class="gallery__figure" data-category="Monkey">
         <img src="images/frame2picture8.png" alt="Monkey" class="gallery__image" itemprop="image">
       </figure>
     </article>
     <article class="gallery__item" itemscope itemtype="https://schema.org/Photograph">
-      <figure class="gallery__figure">
-        <img src="images/frame2picture9.png" alt="Zebra" class="gallery__image" itemprop="image">
+      <figure class="gallery__figure" data-category="Deer">
+        <img src="images/frame2picture9.png" alt="Deer" class="gallery__image" itemprop="image">
       </figure>
     </article>
     <article class="gallery__item" itemscope itemtype="https://schema.org/Photograph">
-      <figure class="gallery__figure">
-        <img src="images/frame2picture10.png" alt="Rhinoceros" class="gallery__image" itemprop="image">
+      <figure class="gallery__figure" data-category="Zebra">
+        <img src="images/frame2picture10.png" alt="Zebra" class="gallery__image" itemprop="image">
       </figure>
     </article>
         </div>
-  </div> 
+  </div>
 
-  
 
         <div class="btn-container">
-    <a class="btn">
-        See my gallery
-        <span class="btn-line"></span>
-    </a>
+            <a class="btn" id="open-gallery-btn">
+                See my gallery
+                <span class="btn-line"></span>
+            </a>
 </div>
     <section id="projects" class="projects">
         <div class="project_left">
@@ -252,5 +252,41 @@
         </p>
     </div>
 </footer>
+
+<div id="modal" class="modal">
+  <div class="modal-content">
+    <span class="close-modal">&times;</span>
+    
+    <div class="modal-filters">
+      <button class="modal-filter-btn active" data-filter="all">All</button>
+      <button class="modal-filter-btn" data-filter="Deer">Deer</button>
+      <button class="modal-filter-btn" data-filter="Fox">Fox</button>
+      <button class="modal-filter-btn" data-filter="Lion">Lion</button>
+      <button class="modal-filter-btn" data-filter="Buffalo">Buffalo</button>
+      <button class="modal-filter-btn" data-filter="Rhinoceros">Rhinoceros</button>
+      <button class="modal-filter-btn" data-filter="Owl">Owl</button>
+      <button class="modal-filter-btn" data-filter="Monkey">Monkey</button>
+      <button class="modal-filter-btn" data-filter="Zebra">Zebra</button>
+    </div>
+
+    <div class="modal-image-container">
+      <button class="modal-nav prev">&lsaquo;</button>
+      <img id="modal-image" src="" alt="">
+      <button class="modal-nav next">&rsaquo;</button>
+    </div>
+    
+    <div id="modal-caption" class="modal-caption"></div>
+  </div>
+</div>
+
+<form id="form">
+  <input type="email" id="email" placeholder="Введите email">
+  <button type="submit">Отправить</button>
+</form>
+
+
+<script type="module" src="js/script.js"></script>
+
 </body>
 </html>
+
