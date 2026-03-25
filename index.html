@@ -70,68 +70,6 @@
     </section>
     <div class="layout">
         <div id="gallery" class="gallery">
-  <!-- 
-        
-        <article class="gallery__item" itemscope itemtype="https://schema.org/Photograph">
-            <figure class="gallery__figure">
-            <img src="images/frame2picture1.png" alt="Buffalo" class="gallery__image" itemprop="image">
-            </figure>
-        </article>
-        <article class="gallery__item" itemscope itemtype="https://schema.org/Photograph">
-            <figure class="gallery__figure">
-            <img src="images/frame2picture2.png" alt="Giraffe" class="gallery__image" itemprop="image">
-        </figure>
-        </article>
-        <article class="gallery__item" itemscope itemtype="https://schema.org/Photograph">
-            <figure class="gallery__figure">
-            <img src="images/frame2picture3.png" alt="Owl" class="gallery__image" itemprop="image">
-        </figure>
-        </article>
-      
- 
-   
-            <article class="gallery__item" itemscope itemtype="https://schema.org/Photograph">
-                <figure class="gallery__figure">
-                    <img src="images/frame2picture4.png" alt="Lion" class="gallery__image" itemprop="image">
-                </figure>
-            </article>
-            <article class="gallery__item" itemscope itemtype="https://schema.org/Photograph">
-                <figure class="gallery__figure">
-
-                    <img src="images/frame2picture5.png" alt="Elephant herd" class="gallery__image" itemprop="image">
-                    <figcaption class="gallery__caption">
-                        <h3 class="gallery__name" itemprop="name">Buffalo</h3>
-                    </figcaption>
-                </figure>
-            </article>
-            <article class="gallery__item" itemscope itemtype="https://schema.org/Photograph">
-                <figure class="gallery__figure">
-                    <img src="images/frame2picture6.png" alt="Tiger" class="gallery__image" itemprop="image">
-                </figure>
-            </article>
-            <article class="gallery__item" itemscope itemtype="https://schema.org/Photograph">
-                <figure class="gallery__figure">
-                    <img src="images/frame2picture7.png" alt="Leopard" class="gallery__image" itemprop="image">
-                </figure>
-            </article>
-
- 
-    <article class="gallery__item" itemscope itemtype="https://schema.org/Photograph">
-      <figure class="gallery__figure">
-        <img src="images/frame2picture8.png" alt="Monkey" class="gallery__image" itemprop="image">
-      </figure>
-    </article>
-    <article class="gallery__item" itemscope itemtype="https://schema.org/Photograph">
-      <figure class="gallery__figure">
-        <img src="images/frame2picture9.png" alt="Zebra" class="gallery__image" itemprop="image">
-      </figure>
-    </article>
-    <article class="gallery__item" itemscope itemtype="https://schema.org/Photograph">
-      <figure class="gallery__figure">
-        <img src="images/frame2picture10.png" alt="Rhinoceros" class="gallery__image" itemprop="image">
-      </figure>
-    </article>  -->
-     
             <div class="gallery__column gallery__column-left">
         <article class="gallery__item" itemscope itemtype="https://schema.org/Photograph">
             <figure class="gallery__figure" data-category="Deer">
@@ -203,29 +141,47 @@
                 <span class="btn-line"></span>
             </a>
 </div>
-    <section id="projects" class="projects">
-        <div class="project_left">
-            <p class="project_tit">— Projects</p>
-            <p class="projects__title">Latest Projects</p>
-        </div>
-        <article class="projects__item"
-                 itemscope
-                 itemtype="https://schema.org/Photograph">
+
+
+
+ <section id="projects" class="projects">
+    <div class="project_left">
+        <p class="project_tit">— Projects</p>
+        <p class="projects__title">Latest Projects</p>
+    </div>
+
+    <div class="projects__slider-wrapper">
+        <button class="slider-btn prev">←</button>
+        <button class="slider-btn next">→</button>
+
+        <article class="projects__item active">
             <figure class="projects__figure">
                 <figcaption class="projects__caption">
-                    <h3 class="projects__name" itemprop="name">
+                    <h3 class="projects__name" style="background-image: url('images/frame3.png');">
                         Royal Bengal Tiger
                     </h3>
                 </figcaption>
             </figure>
         </article>
-        <div class="btn-container">
-    <a class="btn">
-        View projects
-        <span class="btn-line"></span>
-    </a>
-</div>
-    </section>
+
+        <article class="projects__item">
+            <figure class="projects__figure">
+                <figcaption class="projects__caption">
+                    <h3 class="projects__name" style="background-image: url('images/frame3picture2.jpg');">
+                        African Elephant
+                    </h3>
+                </figcaption>
+            </figure>
+        </article>
+    </div>
+
+    <div class="btn-container">
+        <a class="btn">View projects <span class="btn-line"></span></a>
+    </div>
+</section>
+
+
+
         <section class="listed">
     <ul class="listed__list">
         <li class="listed__item">Ozone</li>
@@ -279,13 +235,9 @@
   </div>
 </div>
 
-<form id="form">
-  <input type="email" id="email" placeholder="Введите email">
-  <button type="submit">Отправить</button>
-</form>
 
 
-<script type="module" src="js/script.js"></script>
+<script type ="module" src="js/script.js"></script>
 
 </body>
 </html>
