@@ -15,14 +15,16 @@ export function initGallery() {
   const openGalleryBtn = document.querySelector('#open-gallery-btn');
 
   function updateCurrentPhotos() {
-    const activeFilter = document.querySelector('.modal-filter-btn.active').dataset.filter;
-    
-    if (activeFilter === 'all') {
-      currentPhotos = Array.from(document.querySelectorAll('.gallery__image'));
-    } else {
-      currentPhotos = Array.from(document.querySelectorAll(`.gallery__figure[data-category="${activeFilter}"] .gallery__image`));
-    }
+  const activeFilter = document.querySelector('.modal-filter-btn.active').dataset.filter;
+  
+  const mainGallery = document.getElementById('gallery');
+  if (!mainGallery) return;
+  if (activeFilter === 'all') {
+    currentPhotos = Array.from(mainGallery.querySelectorAll('.gallery__image'));
+  } else {
+    currentPhotos = Array.from(mainGallery.querySelectorAll(`.gallery__figure[data-category="${activeFilter}"] .gallery__image`));
   }
+}
 
   if (openGalleryBtn) {
     openGalleryBtn.addEventListener('click', (e) => {

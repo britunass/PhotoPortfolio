@@ -2,11 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>PhotoPortfolio — Nicole Jane</title>
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Libre+Bodoni:wght@400&display=swap" rel="stylesheet">
+    <title>PhotoPortfolio — Nicole Jane</title>
 </head>
 <body class="page">
 
@@ -29,178 +28,194 @@
         </div>
     </div>
 </header>
+
 <main id="main" class="main">
-    <section id="home"
-             class="hero"
-             itemscope
-             itemtype="https://schema.org/Person">
 
-        <div class="hero__content">
-
-
-            <h1 class="hero__title" itemprop="name">
-                Nicole Jane
-            </h1>
-
-            <p class="hero__subtitle">
-                <span itemprop="description">
-                    Wildlife Photographer
-                </span>
-            </p>
-
-            <p class="hero__since">
-                Since <time datetime="2008">2008</time>
-            </p>
-
-        </div>
-    </section>
-    <section id="about" class="about">
-        <div class="about__left">
-            <h2 class="about__title">
-                — About Me</h2>
-            <h3 class="about__subtitle">Latio in the <br> counter to the <br> focus.</h3>
-        </div>
-        <div class="about__right">
-            <p class="about__text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Felis in nibh in risus, cras tellus facilisis adipiscing. In massa at quis lorem vel facilisis morbi. Id eget enim, leo sed nunc. Nisi praesent vitae tincidunt iaculis.
-            </p>
-            <p class="about__text">
-                Semper quis gravida accumsan quam mattis tellus dignissim. Commodo lectus in integer montes, consectetur sed nisl sollicitudin. Sit sem sem odio mattis.
-            </p>
-        </div>
-    </section>
-    <div class="layout">
-        <section class="favorites-section">
-            <div class="container">
-                <h2>⭐ My favs (Offline Cache)</h2>
-                <div id="favorites-container" class="gallery">
-                    <p class="empty-msg"> </p>
-                </div>
+        <section id="home"
+                class="hero"
+                itemscope
+                itemtype="https://schema.org/Person">
+            <div class="hero__content">
+                <h1 class="hero__title" itemprop="name">
+                    Nicole Jane
+                </h1>
+                <p class="hero__subtitle">
+                    <span itemprop="description">
+                        Wildlife Photographer
+                    </span>
+                </p>
+                <p class="hero__since">
+                    Since <time datetime="2008">2008</time>
+                </p>
             </div>
         </section>
+
+        <section id="about" class="about">
+            <div class="about__left">
+                <h2 class="about__title">
+                    — About Me</h2>
+                <h3 class="about__subtitle">Latio in the <br> counter to the <br> focus.</h3>
+            </div>
+            <div class="about__right">
+                <p class="about__text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Felis in nibh in risus, cras tellus facilisis adipiscing. In massa at quis lorem vel facilisis morbi. Id eget enim, leo sed nunc. Nisi praesent vitae tincidunt iaculis.
+                </p>
+                <p class="about__text">
+                    Semper quis gravida accumsan quam mattis tellus dignissim. Commodo lectus in integer montes, consectetur sed nisl sollicitudin. Sit sem sem odio mattis.
+                </p>
+            </div>
+        </section>
+        
         <hr>
-        <div id="gallery" class="gallery">
-  
-      <div class="gallery__column gallery__column-left">
-        <article class="gallery__item" itemscope itemtype="https://schema.org/Photograph">
-            <figure class="gallery__figure" data-category="Deer">
-            <img src="images/frame2picture1.png" alt="Deer" class="gallery__image" id="p1" itemprop="image">
-            </figure>
-        </article>
-        <article class="gallery__item" itemscope itemtype="https://schema.org/Photograph">
-            <figure class="gallery__figure" data-category="Fox">
-            <img src="images/frame2picture2.png" alt="Fox" class="gallery__image" id="p2" itemprop="image">
-        </figure>
-        </article>
-        <article class="gallery__item" itemscope itemtype="https://schema.org/Photograph">
-            <figure class="gallery__figure" data-category="Lion">
-            <img src="images/frame2picture3.png" alt="Lion" class="gallery__image" id="p3" itemprop="image">
-        </figure>
-        </article>
-        </div>
 
-        <div class="gallery__column gallery__column-center">
-        <article class="gallery__item" itemscope itemtype="https://schema.org/Photograph">
-      <figure class="gallery__figure" data-category="Lion">
-        <img src="images/frame2picture4.png" alt="Lion" class="gallery__image" id="p4" itemprop="image">
-      </figure>
-    </article>
-    <article class="gallery__item" itemscope itemtype="https://schema.org/Photograph">
-      <figure class="gallery__figure" data-category="Buffalo">
-        <img src="images/frame2picture5.png" alt="Buffalo" class="gallery__image" id="p5" itemprop="image">
-        <fig caption class="gallery__caption">
-          <h3 class="gallery__name" itemprop="name">Buffalo</h3>
-        </figcaption>
-      </figure>
-    </article>
-    <article class="gallery__item" itemscope itemtype="https://schema.org/Photograph">
-      <figure class="gallery__figure" data-category="Rhinoceros">
-        <img src="images/frame2picture6.png" alt="Rhinoceros" class="gallery__image" id="p6" itemprop="image">
-      </figure>
-    </article>
-    <article class="gallery__item" itemscope itemtype="https://schema.org/Photograph">
-      <figure class="gallery__figure" data-category="Owl">
-        <img src="images/frame2picture7.png" alt="Owl" class="gallery__image" id="p7" itemprop="image">
-      </figure>
-    </article>
-  </div>
+        <div class="layout">
+            <section class="favorites-section">
+                <div class="container">
+                    <h2>My favs</h2>
+                    <div id="favorites-container" class="gallery">
+                        <p class="empty-msg"> </p>
+                    </div>
+                </div>
+            </section>
 
+            <div id="gallery" class="gallery">
+    
+            <div class="gallery__column gallery__column-left">
+                <article class="gallery__item" itemscope itemtype="https://schema.org/Photograph">
+                <figure class="gallery__figure" data-category="Deer">
+                <img src="images/frame2picture1.png" alt="Deer" class="gallery__image" id="p1" itemprop="image">
+                </figure>
+                </article>
+                <article class="gallery__item" itemscope itemtype="https://schema.org/Photograph">
+                <figure class="gallery__figure" data-category="Fox">
+                <img src="images/frame2picture2.png" alt="Fox" class="gallery__image" id="p2" itemprop="image">
+                </figure>
+                </article>
+                <article class="gallery__item" itemscope itemtype="https://schema.org/Photograph">
+                <figure class="gallery__figure" data-category="Lion">
+                <img src="images/frame2picture3.png" alt="Lion" class="gallery__image" id="p3" itemprop="image">
+                </figure>
+                </article>
+                </div>
 
-  <div class="gallery__column">
-    <article class="gallery__item" itemscope itemtype="https://schema.org/Photograph">
-      <figure class="gallery__figure" data-category="Monkey">
-        <img src="images/frame2picture8.png" alt="Monkey" class="gallery__image" id="p8" itemprop="image">
-      </figure>
-    </article>
-    <article class="gallery__item" itemscope itemtype="https://schema.org/Photograph">
-      <figure class="gallery__figure" data-category="Deer">
-        <img src="images/frame2picture9.png" alt="Deer" class="gallery__image" id="p9" itemprop="image">
-      </figure>
-    </article>
-    <article class="gallery__item" itemscope itemtype="https://schema.org/Photograph">
-      <figure class="gallery__figure" data-category="Zebra">
-        <img src="images/frame2picture10.png" alt="Zebra" class="gallery__image" id="p10" itemprop="image">
-      </figure>
-    </article>
-        </div>
-  </div> 
+            <div class="gallery__column gallery__column-center">
+                <article class="gallery__item" itemscope itemtype="https://schema.org/Photograph">
+                <figure class="gallery__figure" data-category="Lion">
+                <img src="images/frame2picture4.png" alt="Lion" class="gallery__image" id="p4" itemprop="image">
+                </figure>
+                </article>
+                <article class="gallery__item" itemscope itemtype="https://schema.org/Photograph">
+                <figure class="gallery__figure" data-category="Buffalo">
+                <img src="images/frame2picture5.png" alt="Buffalo" class="gallery__image" id="p5" itemprop="image">
+                <fig caption class="gallery__caption">
+                <h3 class="gallery__name" itemprop="name">Buffalo</h3>
+                </figcaption>
+                </figure>
+                </article>
+                <article class="gallery__item" itemscope itemtype="https://schema.org/Photograph">
+                <figure class="gallery__figure" data-category="Rhinoceros">
+                <img src="images/frame2picture6.png" alt="Rhinoceros" class="gallery__image" id="p6" itemprop="image">
+                </figure>
+                </article>
+                <article class="gallery__item" itemscope itemtype="https://schema.org/Photograph">
+                <figure class="gallery__figure" data-category="Owl">
+                <img src="images/frame2picture7.png" alt="Owl" class="gallery__image" id="p7" itemprop="image">
+                </figure>
+                </article>
+            </div>
+
+            <div class="gallery__column">
+                <article class="gallery__item" itemscope itemtype="https://schema.org/Photograph">
+                <figure class="gallery__figure" data-category="Monkey">
+                <img src="images/frame2picture8.png" alt="Monkey" class="gallery__image" id="p8" itemprop="image">
+                </figure>
+                </article>
+                <article class="gallery__item" itemscope itemtype="https://schema.org/Photograph">
+                <figure class="gallery__figure" data-category="Deer">
+                <img src="images/frame2picture9.png" alt="Deer" class="gallery__image" id="p9" itemprop="image">
+                </figure>
+                </article>
+                <article class="gallery__item" itemscope itemtype="https://schema.org/Photograph">
+                <figure class="gallery__figure" data-category="Zebra">
+                <img src="images/frame2picture10.png" alt="Zebra" class="gallery__image" id="p10" itemprop="image">
+                </figure>
+                </article>
+            </div>
+        </div> 
+    
         <div class="btn-container">
             <a class="btn" id="open-gallery-btn">
-                See my gallery
-                <span class="btn-line"></span>
+            See my gallery
+            <span class="btn-line"></span>
             </a>
         </div>
-        <section>
-            <h2>Images from Unsplash API</h2>
-            <div id="unsplash-gallery" class="gallery-grid">
+
+        <hr>
+            
+        <section class="unsplash-section">
+            <h2 class="unsplash-title">Images from Unsplash API</h2>
+            <div id="unsplash-gallery" class="unsplash-grid"></div>
+            <div class="btn-container">
+                <button id="refresh-unsplash" class="btn">
+                    Generate New Photos
+                    <span class="btn-line"></span>
+                </button>
             </div>
         </section>
-    <section id="projects" class="projects">
-    <div class="project_left">
-        <p class="project_tit">— Projects</p>
-        <p class="projects__title">Latest Projects</p>
-    </div>
 
-    <div class="projects__slider-wrapper">
-        <button class="slider-btn prev">←</button>
-        <button class="slider-btn next">→</button>
+        <section id="projects" class="projects">
+            <div class="project_left">
+                <p class="project_tit">— Projects</p>
+                <p class="projects__title">Latest Projects</p>
+            </div>
 
-        <article class="projects__item active">
-            <figure class="projects__figure">
-                <figcaption class="projects__caption">
-                    <h3 class="projects__name" style="background-image: url('images/frame3.png');">
-                        Royal Bengal Tiger
-                    </h3>
-                </figcaption>
-            </figure>
-        </article>
+            <div class="projects__slider-wrapper">
+                <button class="slider-btn prev">&lsaquo;</button>
+                <button class="slider-btn next">&rsaquo;</button>
 
-        <article class="projects__item">
-            <figure class="projects__figure">
-                <figcaption class="projects__caption">
-                    <h3 class="projects__name" style="background-image: url('images/frame3picture2.png');">
-                        African Elephant
-                    </h3>
-                </figcaption>
-            </figure>
-        </article>
-    </div>
+                <article class="projects__item active">
+                    <figure class="projects__figure">
+                        <figcaption class="projects__caption">
+                            <h3 class="projects__name" style="background-image: url('images/frame3.png');">
+                                Royal Bengal Tiger
+                            </h3>
+                        </figcaption>
+                    </figure>
+                </article>
 
-    <div class="btn-container">
-        <a class="btn">View projects <span class="btn-line"></span></a>
-    </div>
-</section>
+                <article class="projects__item">
+                    <figure class="projects__figure">
+                        <figcaption class="projects__caption">
+                            <h3 class="projects__name" style="background-image: url('images/frame3picture2.png');">
+                                African Elephant
+                            </h3>
+                        </figcaption>
+                    </figure>
+                </article>
+            </div>
+
+            <div class="btn-container">
+                <a class="btn">View projects <span class="btn-line"></span></a>
+            </div>
+
+        </section>
+
+        <hr>
+
         <section class="listed">
-    <ul class="listed__list">
-        <li class="listed__item">Ozone</li>
-        <li class="listed__item">Grabmaze</li>
-        <li class="listed__item">Natureflow</li>
-        <li class="listed__item">AllAround</li>
-        <li class="listed__item">IGnt</li>
-    </ul>
-</section>
+            <ul class="listed__list">
+                <li class="listed__item">Ozone</li>
+                <li class="listed__item">Grabmaze</li>
+                <li class="listed__item">Natureflow</li>
+                <li class="listed__item">AllAround</li>
+                <li class="listed__item">IGnt</li>
+            </ul>
+        </section>
+
     </div>
+
 </main>
+
 <footer id="contact" class="footer">
     <div class="footer_left">
         <p class="footer_text">
@@ -218,29 +233,29 @@
 </footer>
 
 <div id="modal" class="modal">
-  <div class="modal-content">
-    <span class="close-modal">&times;</span>
-    
-    <div class="modal-filters">
-      <button class="modal-filter-btn active" data-filter="all">All</button>
-      <button class="modal-filter-btn" data-filter="Deer">Deer</button>
-      <button class="modal-filter-btn" data-filter="Fox">Fox</button>
-      <button class="modal-filter-btn" data-filter="Lion">Lion</button>
-      <button class="modal-filter-btn" data-filter="Buffalo">Buffalo</button>
-      <button class="modal-filter-btn" data-filter="Rhinoceros">Rhinoceros</button>
-      <button class="modal-filter-btn" data-filter="Owl">Owl</button>
-      <button class="modal-filter-btn" data-filter="Monkey">Monkey</button>
-      <button class="modal-filter-btn" data-filter="Zebra">Zebra</button>
-    </div>
+    <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        
+        <div class="modal-filters">
+            <button class="modal-filter-btn active" data-filter="all">All</button>
+            <button class="modal-filter-btn" data-filter="Deer">Deer</button>
+            <button class="modal-filter-btn" data-filter="Fox">Fox</button>
+            <button class="modal-filter-btn" data-filter="Lion">Lion</button>
+            <button class="modal-filter-btn" data-filter="Buffalo">Buffalo</button>
+            <button class="modal-filter-btn" data-filter="Rhinoceros">Rhinoceros</button>
+            <button class="modal-filter-btn" data-filter="Owl">Owl</button>
+            <button class="modal-filter-btn" data-filter="Monkey">Monkey</button>
+            <button class="modal-filter-btn" data-filter="Zebra">Zebra</button>
+        </div>
 
-    <div class="modal-image-container">
-      <button class="modal-nav prev">&lsaquo;</button>
-      <img id="modal-image" src="" alt="">
-      <button class="modal-nav next">&rsaquo;</button>
-    </div>
-    
-    <div id="modal-caption" class="modal-caption"></div>
-  </div>
+        <div class="modal-image-container">
+            <button class="modal-nav prev">&lsaquo;</button>
+            <img id="modal-image" src="" alt="">
+            <button class="modal-nav next">&rsaquo;</button>
+        </div>
+        
+        <div id="modal-caption" class="modal-caption"></div>
+     </div>
 </div>
 
 <script type="module" src="js/script.js" ></script>

@@ -1,6 +1,7 @@
 
 import { initGallery } from './components/modal.js';
 import { initProject } from './components/slider.js';
+import { initBurger } from './components/burgerMenu.js';
 import ApiService from './api/apiService.js';
 import { API_CONFIG, FALLBACK_DATA } from './api/config.js'; 
 import LocalStorageService from './storage/LocalStorage.js';
@@ -16,23 +17,25 @@ function renderFavorites() {
         return;
     }
     container.innerHTML = '';
+    
+    // Убрали <figcaption>ID: {{id}}</figcaption>
     const template = `
         <div class="gallery__item is-favorite">
             <figure class="gallery__figure" style="position: relative;">
                 <img src="images/frame2picture{{id_num}}.png" id="{{id}}" class="gallery__image">
                 <button class="favorite-btn">★</button> 
-                <figcaption>ID: {{id}}</figcaption>
             </figure>
         </div>
     `;
+    
     favoriteIds.forEach((id) => {
-    const match = id.match(/\d+/); 
-    const idNum = match ? match[0] : "1"; 
-    const photoElement = createElementFromData({ 
-        id: id, 
-        id_num: idNum 
-    }, template);
-    container.appendChild(photoElement);
+        const match = id.match(/\d+/); 
+        const idNum = match ? match[0] : "1"; 
+        const photoElement = createElementFromData({ 
+            id: id, 
+            id_num: idNum 
+        }, template);
+        container.appendChild(photoElement);
     });
 }
 class APITester {
@@ -57,13 +60,18 @@ const unsplashApi = new ApiService(API_CONFIG.unsplash.url, API_CONFIG.unsplash.
 async function loadUnsplashPhotos() {
     const container = document.getElementById('unsplash-gallery'); 
     if (!container) return;
+
     try {
-        const response = await unsplashApi.get(API_CONFIG.unsplash.endpoints.photos, { per_page: 8 });
+        const response = await unsplashApi.get(API_CONFIG.unsplash.endpoints.random, { 
+            count: 6, 
+            query: 'wildlife,nature,animals',
+            sig: Math.random()
+        });
+
         allPhotos = parsePhotos(response);
-        console.log('Данные из Unsplash получены:', allPhotos);
         renderUnsplash(allPhotos);
     } catch (err) {
-        console.error('Unsplash недоступен, показываю запасные фото API:', err);
+        console.error('Ошибка при загрузке Unsplash:', err);
         allPhotos = parsePhotos(FALLBACK_DATA.unsplash);
         renderUnsplash(allPhotos);
     }
@@ -71,18 +79,30 @@ async function loadUnsplashPhotos() {
 
 function renderUnsplash(photos) {
     const container = document.getElementById('unsplash-gallery');
+    if (!container) return;
+
+    container.className = 'unsplash-grid';
     container.innerHTML = '';
-    const unsplashTemplate = `
-        <div class="gallery__item">
-            <figure class="gallery__figure">
-                <img src="{{url}}" id="{{id}}" class="gallery__image" alt="{{alt}}">
-                <figcaption>Photo by Unsplash</figcaption>
-            </figure>
-        </div>
-    `;
-    photos.forEach(photo => {
-        const element = createElementFromData(photo, unsplashTemplate);
-        container.appendChild(element);
+
+    const colCount = 3;
+    const columns = [];
+    for (let i = 0; i < colCount; i++) {
+        const col = document.createElement('div');
+        col.className = 'unsplash-col';
+        columns.push(col);
+        container.appendChild(col);
+    }
+
+    photos.forEach((photo, index) => {
+        const colIndex = index % colCount;
+        const photoHtml = `
+            <div class="unsplash-item">
+                <img src="${photo.url}" 
+                     class="unsplash-img" 
+                     alt="${photo.alt || 'Photo'}">
+            </div>
+        `;
+        columns[colIndex].insertAdjacentHTML('beforeend', photoHtml);
     });
 }
 
@@ -133,6 +153,7 @@ function initApp() {
     loadUnsplashPhotos();
     initGallery();
     initProject();
+    initBurger();
     const favoriteIds = LocalStorageService.get('favorites') || [];
     const galleryItems = document.querySelectorAll('.gallery__item');
     galleryItems.forEach(item => {
@@ -153,6 +174,16 @@ function initApp() {
             figure.appendChild(favoriteBtn);
         }
     });
+    const refreshBtn = document.getElementById('refresh-unsplash');
+    
+    if (refreshBtn) {
+        refreshBtn.addEventListener('click', () => {
+            refreshBtn.textContent = 'Loading...'; 
+            loadUnsplashPhotos().then(() => {
+                refreshBtn.innerHTML = 'Generate New Photos <span class="btn-line"></span>';
+            });
+        });
+    }
     setupFavorites();
     renderFavorites(); 
 }

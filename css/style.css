@@ -3,6 +3,7 @@
 @import url('main.css');
 @import url('footer.css');
 @import url('modal.css');
+@import url('unsplash.css');
 
 body {
     margin: 0;
@@ -13,3 +14,4 @@ body {
 * {
   box-sizing: border-box;
 }
+
