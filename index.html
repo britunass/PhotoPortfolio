@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>PhotoPortfolio — Nicole Jane</title>
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Libre+Bodoni:wght@400&display=swap" rel="stylesheet">
@@ -69,21 +70,31 @@
         </div>
     </section>
     <div class="layout">
+        <section class="favorites-section">
+            <div class="container">
+                <h2>⭐ My favs (Offline Cache)</h2>
+                <div id="favorites-container" class="gallery">
+                    <p class="empty-msg"> </p>
+                </div>
+            </div>
+        </section>
+        <hr>
         <div id="gallery" class="gallery">
-            <div class="gallery__column gallery__column-left">
+  
+      <div class="gallery__column gallery__column-left">
         <article class="gallery__item" itemscope itemtype="https://schema.org/Photograph">
             <figure class="gallery__figure" data-category="Deer">
-            <img src="images/frame2picture1.png" alt="Deer" class="gallery__image" itemprop="image">
+            <img src="images/frame2picture1.png" alt="Deer" class="gallery__image" id="p1" itemprop="image">
             </figure>
         </article>
         <article class="gallery__item" itemscope itemtype="https://schema.org/Photograph">
             <figure class="gallery__figure" data-category="Fox">
-            <img src="images/frame2picture2.png" alt="Fox" class="gallery__image" itemprop="image">
+            <img src="images/frame2picture2.png" alt="Fox" class="gallery__image" id="p2" itemprop="image">
         </figure>
         </article>
         <article class="gallery__item" itemscope itemtype="https://schema.org/Photograph">
             <figure class="gallery__figure" data-category="Lion">
-            <img src="images/frame2picture3.png" alt="Lion" class="gallery__image" itemprop="image">
+            <img src="images/frame2picture3.png" alt="Lion" class="gallery__image" id="p3" itemprop="image">
         </figure>
         </article>
         </div>
@@ -91,12 +102,12 @@
         <div class="gallery__column gallery__column-center">
         <article class="gallery__item" itemscope itemtype="https://schema.org/Photograph">
       <figure class="gallery__figure" data-category="Lion">
-        <img src="images/frame2picture4.png" alt="Lion" class="gallery__image" itemprop="image">
+        <img src="images/frame2picture4.png" alt="Lion" class="gallery__image" id="p4" itemprop="image">
       </figure>
     </article>
     <article class="gallery__item" itemscope itemtype="https://schema.org/Photograph">
       <figure class="gallery__figure" data-category="Buffalo">
-        <img src="images/frame2picture5.png" alt="Buffalo" class="gallery__image" itemprop="image">
+        <img src="images/frame2picture5.png" alt="Buffalo" class="gallery__image" id="p5" itemprop="image">
         <fig caption class="gallery__caption">
           <h3 class="gallery__name" itemprop="name">Buffalo</h3>
         </figcaption>
@@ -104,12 +115,12 @@
     </article>
     <article class="gallery__item" itemscope itemtype="https://schema.org/Photograph">
       <figure class="gallery__figure" data-category="Rhinoceros">
-        <img src="images/frame2picture6.png" alt="Rhinoceros" class="gallery__image" itemprop="image">
+        <img src="images/frame2picture6.png" alt="Rhinoceros" class="gallery__image" id="p6" itemprop="image">
       </figure>
     </article>
     <article class="gallery__item" itemscope itemtype="https://schema.org/Photograph">
       <figure class="gallery__figure" data-category="Owl">
-        <img src="images/frame2picture7.png" alt="Owl" class="gallery__image" itemprop="image">
+        <img src="images/frame2picture7.png" alt="Owl" class="gallery__image" id="p7" itemprop="image">
       </figure>
     </article>
   </div>
@@ -118,33 +129,33 @@
   <div class="gallery__column">
     <article class="gallery__item" itemscope itemtype="https://schema.org/Photograph">
       <figure class="gallery__figure" data-category="Monkey">
-        <img src="images/frame2picture8.png" alt="Monkey" class="gallery__image" itemprop="image">
+        <img src="images/frame2picture8.png" alt="Monkey" class="gallery__image" id="p8" itemprop="image">
       </figure>
     </article>
     <article class="gallery__item" itemscope itemtype="https://schema.org/Photograph">
       <figure class="gallery__figure" data-category="Deer">
-        <img src="images/frame2picture9.png" alt="Deer" class="gallery__image" itemprop="image">
+        <img src="images/frame2picture9.png" alt="Deer" class="gallery__image" id="p9" itemprop="image">
       </figure>
     </article>
     <article class="gallery__item" itemscope itemtype="https://schema.org/Photograph">
       <figure class="gallery__figure" data-category="Zebra">
-        <img src="images/frame2picture10.png" alt="Zebra" class="gallery__image" itemprop="image">
+        <img src="images/frame2picture10.png" alt="Zebra" class="gallery__image" id="p10" itemprop="image">
       </figure>
     </article>
         </div>
-  </div>
-
-
+  </div> 
         <div class="btn-container">
             <a class="btn" id="open-gallery-btn">
                 See my gallery
                 <span class="btn-line"></span>
             </a>
-</div>
-
-
-
- <section id="projects" class="projects">
+        </div>
+        <section>
+            <h2>Images from Unsplash API</h2>
+            <div id="unsplash-gallery" class="gallery-grid">
+            </div>
+        </section>
+    <section id="projects" class="projects">
     <div class="project_left">
         <p class="project_tit">— Projects</p>
         <p class="projects__title">Latest Projects</p>
@@ -167,7 +178,7 @@
         <article class="projects__item">
             <figure class="projects__figure">
                 <figcaption class="projects__caption">
-                    <h3 class="projects__name" style="background-image: url('images/frame3picture2.jpg');">
+                    <h3 class="projects__name" style="background-image: url('images/frame3picture2.png');">
                         African Elephant
                     </h3>
                 </figcaption>
@@ -179,9 +190,6 @@
         <a class="btn">View projects <span class="btn-line"></span></a>
     </div>
 </section>
-
-
-
         <section class="listed">
     <ul class="listed__list">
         <li class="listed__item">Ozone</li>
@@ -235,10 +243,7 @@
   </div>
 </div>
 
-
-
-<script type ="module" src="js/script.js"></script>
+<script type="module" src="js/script.js" ></script>
 
 </body>
 </html>
-
