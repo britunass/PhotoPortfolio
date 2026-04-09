@@ -1,7 +1,7 @@
 export const API_CONFIG = {
     unsplash: {
         url: 'https://api.unsplash.com',
-        apiKey: 'NZcPPJkfcwgTQLOBMKngU2Sj4WwIj3CwUKa_hV8f5emc', 
+        apiKey: 'NZcPPJkfcwgTQLOBMKngU2Sj4WwIj3CwUKa_hV8femc', 
         endpoints: {
             photos: '/photos',
             search: '/search/photos',
