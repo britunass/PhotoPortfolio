@@ -1,4 +1,3 @@
-
 import { initGallery } from './components/modal.js';
 import { initProject } from './components/slider.js';
 import { initBurger } from './components/burgerMenu.js';
@@ -18,7 +17,6 @@ function renderFavorites() {
     }
     container.innerHTML = '';
     
-    // Убрали <figcaption>ID: {{id}}</figcaption>
     const template = `
         <div class="gallery__item is-favorite">
             <figure class="gallery__figure" style="position: relative;">
